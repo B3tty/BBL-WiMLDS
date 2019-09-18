@@ -13249,32 +13249,137 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Some-title">Some title<a class="anchor-link" href="#Some-title">&#182;</a></h2><h3 id="Sub-title">Sub title<a class="anchor-link" href="#Sub-title">&#182;</a></h3><p>This is some content!!</p>
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="State-of-the-Art">State of the Art<a class="anchor-link" href="#State-of-the-Art">&#182;</a></h3><ul>
+<li><p>8: Zalando, Romain Guigourès, Yuen King Ho, Evgenii Koriagin, Abdul-Saboor Sheikh, Urs Bergmann, and Reza Shirvany. 2018. <a href="https://rguigoures.github.io/pdf/hierarchical-bayesian-model_final.pdf">A Hierarchical Bayesian Model for Size Recommendation in Fashion</a></p>
+<ul>
+<li>Bayesian model that learns the joint probability of a customer purchasing a given product size and the resulting return status being either too small, too big or no return</li>
+<li>The probability distributionover sizes is conditioned on the return status and the probability over return statuses is modeled as the empirical distribution over the three possible return events along with a Dirichlet prior based on the counts at the brand and category level</li>
+</ul>
+</li>
+<li><p>13 Rishabh Misra, Mengting Wan, and Julian McAuley. 2018. <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf">Decomposing Fit Semantics for Product Size Recommendation in Metric Spaces</a></p>
+<ul>
+<li>learns a latent space for customers and products by applying ordinal regression.</li>
+<li>A fitness score is computed for each purchase and size ordering is enforced based on customer’s feedback on the purchased size (i.e. too small, too big or a good fit). In order to handle class imbalances, metric learning techniques are applied to transform data into a space where purchases of the same class are closer and purchases of different classes are separated by a margin</li>
+</ul>
+</li>
+<li><p>18 Vivek Sembium, Rajeev Rastogi, Atul Saroop, and Srujana Merugu. 2017. <a href="https://cseweb.ucsd.edu/classes/fa17/cse291-b/reading/p243-sembium.pdf">Recommending Product Sizes to Customers</a></p>
+<ul>
+<li>Ordinal regression problem</li>
+<li>customer and product true sizes are learned by taking their differences and feeding them into a linear model</li>
+<li>propose a solution for determining if an article of a certain size would be fit, large, or small for a certain customer, using the purchase history.</li>
+<li>This is achieved by iteratively deducing the true sizes for customers and products, fitting a linear function based on the difference in sizes, and performing ordinal regression on the output of the function to get the loss.</li>
+<li>Extra features are simply included by addition to the linear function.</li>
+</ul>
+</li>
+<li><p>19 Vivek Sembium, Rajeev Rastogi, Lavanya Tekumalla, and Atul Saroop. 2018. <a href="http://delivery.acm.org/10.1145/3190000/3186149/p679-sembium.pdf">Bayesian Models for Product Size Recommendations</a></p>
+<ul>
+<li>extends the work of [18] with a Bayesian logit and probit regression model with ordinal categories</li>
+<li>The posterior distribution over customer and product true sizes is based on mean-field variational inference with Polya-Gammma augmentation.</li>
+</ul>
+</li>
+</ul>
+<p>The Bayesian approach allows the use of priors for handling data sparsity and the computation of confidence intervals for dealing with noisy data. Both and generate ordinal categorical variables based on explicit customer feedback on returned items (e.g. too small, too big or no return).</p>
+<hr>
+<ul>
+<li><p>4 <a href="https://kddfashion2017.mybluemix.net/final_submissions/ML4Fashion_paper_8.pdf">Size Recommendation System for Fashion E-Commerce</a></p>
+<ul>
+<li>learns latent product features using Word2Vec and feeds them into a Gradient Boosting classifier along with additional product features (e.g physical measurements, colour, etc.).</li>
+<li>However, additional product features are often difficult to obtain</li>
+</ul>
+</li>
+<li><p>20 Shreya Singh, G. Mohammed Abdulla, Sumit Borar, and Sagar Arora. 2018. <a href="https://arxiv.org/pdf/1806.11423.pdf">Footwear Size Recommendation System</a></p>
+<ul>
+<li>extends 4 to the specific case of footwear size recommendations and also proposes a probabilistic graphical approach that exploits brand similarities.</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
-</div><div class="fragment">
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="TODO">TODO<a class="anchor-link" href="#TODO">&#182;</a></h2><p>Dirichlet prior</p>
+<p>Bayesian distribution, hyperparameters</p>
+<p>Hierarchical Bayesian Model</p>
+<p>Monte-Carlo Markov chains</p>
+<p>Variational inference methods using meanfield approximation</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Size-Recommendations">Size Recommendations<a class="anchor-link" href="#Size-Recommendations">&#182;</a></h2><h3 id="Zalando">Zalando<a class="anchor-link" href="#Zalando">&#182;</a></h3><ul>
+<li>Represent articles as a combination of brand, usage, size, and fit</li>
+<li>A neural network is then trained to learn a latent vector describing each article defined as the combination of features mentioned before</li>
+<li>Customer vector representation is obtained by aggregating over purchased articles</li>
+<li>Finally, a gradient boosted classifier predicts the fit of an article to a customer.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p>Neural Collaborative Filtering approach</p>
+<p>Collaborative filtering uses customer-product interactions and is based on the assumption that customers buying similar products have similar tastes. This principle naturally translates into the size and fit domain as "customers with similar body shapes tend to buy clothes in similar sizes".</p>
+<ul>
+<li>learn a latent space at a product size level instead of at a product level i.e. we have a different vector for every possible size of a product</li>
+<li>asymmetric framework so that users are not represented explicitly, but as the aggregate of the product vectors with which they have interacted</li>
+<li>train different models for each product category (tops, bottoms or shoes), so all trained embeddings belong to the same category and the learned latent space represents the same body part</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p>Transfer from Brand to Product</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="State-of-the-Art">State of the Art<a class="anchor-link" href="#State-of-the-Art">&#182;</a></h3><p>Goal: Reduce noise in recommendations</p>
+<ul>
+<li>use of empirically determined thresholds on the range of purchased sizes</li>
+<li>statistical models</li>
+<li>filter out users where the mean and std deviation of the purchased sizes exceeds a category level threshold</li>
+<li>hierarchical clustering method where clusters are iteratively merged as long as the std deviation does not exceed an empirical threshold</li>
+<li>persona distribution learned from a dirichlet distribution</li>
+<li>Gaussian kernel density estimation approach refined to a gaussian mixture model</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Some</span> <span class="n">code</span> <span class="n">content</span><span class="o">.</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div></div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Some other content</p>
-
-</div>
-</div>
-</div></div></section></section>
+</div></section></section>
 </div>
 </div>
 

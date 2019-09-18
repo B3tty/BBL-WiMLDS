@@ -13249,32 +13249,118 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Some-title">Some title<a class="anchor-link" href="#Some-title">&#182;</a></h2><h3 id="Sub-title">Sub title<a class="anchor-link" href="#Sub-title">&#182;</a></h3><p>This is some content!!</p>
+<h2 id="Size-Recommendations">Size Recommendations<a class="anchor-link" href="#Size-Recommendations">&#182;</a></h2><h3 id="Zalando">Zalando<a class="anchor-link" href="#Zalando">&#182;</a></h3><p><a href="https://rguigoures.github.io/pdf/hierarchical-bayesian-model_final.pdf">A Hierarchical Bayesian Model for Size Recommendation in Fashion</a></p>
+<ul>
+<li>Represent articles as a combination of brand, usage, size, and fit</li>
+<li>A neural network is then trained to learn a latent vector describing each article defined as the combination of features mentioned before</li>
+<li>Customer vector representation is obtained by aggregating over purchased articles</li>
+<li>Finally, a gradient boosted classifier predicts the fit of an article to a customer: it learns the joint probability of a customer purchasing a given product size and the resulting return status being either too small, too big or no return</li>
+</ul>
 
 </div>
 </div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Some</span> <span class="n">code</span> <span class="n">content</span><span class="o">.</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Some other content</p>
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p><strong><em>Neural Collaborative Filtering approach</em></strong></p>
+<p>Collaborative filtering uses customer-product interactions and is based on the assumption that customers buying similar products have similar tastes. This principle naturally translates into the size and fit domain as "customers with similar body shapes tend to buy clothes in similar sizes".</p>
+<ul>
+<li>learn a latent space at a product size level instead of at a product level i.e. we have a different vector for every possible size of a product</li>
+<li>asymmetric framework so that users are not represented explicitly, but as the aggregate of the product vectors with which they have interacted</li>
+<li>train different models for each product category (tops, bottoms or shoes), so all trained embeddings belong to the same category and the learned latent space represents the same body part</li>
+</ul>
 
 </div>
 </div>
-</div></div></section></section>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p><strong><em>Transfer from Brand to Product</em></strong></p>
+<p>Model of product-size combinations instead of just products =&gt; product-size interaction matrix ~10 times sparser than for product recommendations</p>
+<ul>
+<li>Assume that each brand has consistent sizes</li>
+<li>Learn latent representations <em>V<sub>bs</sub></em> for every combination of brand <em>b</em> and size <em>s</em></li>
+<li>Transfer this to a product level: V<sub>ps</sub> = V<sub>bs</sub>  , ∀p<sub>s</sub> ∈ b<sub>s</sub></li>
+</ul>
+<p>Impacts</p>
+<ul>
+<li>Improves generalisation</li>
+<li>Boosts performance</li>
+<li>Leads to faster convergence</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><p><em>Goal: Reduce noise in recommendations</em></p>
+<h3 id="State-of-the-Art">State of the Art<a class="anchor-link" href="#State-of-the-Art">&#182;</a></h3><ul>
+<li>Explicitly use different user profiles (Netflix)</li>
+<li>Use of empirically determined thresholds on the range of purchased sizes</li>
+<li>Statistical models</li>
+<li>Filter out users where the mean and std deviation of the purchased sizes exceeds a category level threshold</li>
+<li>Hierarchical clustering method where clusters are iteratively merged as long as the std deviation does not exceed an empirical threshold</li>
+<li>Persona distribution learned from a dirichlet distribution</li>
+<li>Gaussian kernel density estimation approach refined to a gaussian mixture model</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3><ul>
+<li>Gaussian Mixture Model</li>
+<li>Assumes that one user is centred around <strong>one</strong> core size</li>
+<li>Each persona is represented by a Gaussian distribution, whose mean µ corresponds to the persona’s core size</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3><p><strong><em>Process</em></strong></p>
+<ul>
+<li><p>Run the GMM to detect λ personas within H<sub>u</sub></p>
+<ul>
+<li>The parameter λ (number of personas) is iteratively increased as long as<ul>
+<li>s<sub>λ</sub> is higher than s<sub>λ-1</sub></li>
+<li>The core size of each mixture component differs by at least 1 size unit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Calculating the silhouette score s<sub>λ</sub> associated with that mixture</p>
+</li>
+</ul>
+<p>When the iterative process is finished, if <strong>λ &gt; 1</strong> that customer is identified as buying for <strong>multiple personas</strong>.</p>
+<p>Accounts with multiple personas are removed from training and testing sets for size recommendations.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3>
+<pre><code>UK3, UK3, UK3.5, UK4, UK4                         ➞ 1 persona
+
+{UK2, UK2}, {UK5, UK5, UK6}                       ➞ 2 personas
+
+{UK2, UK3, UK3, UK3, UK4, UK4}, {UK6, UK6}, {UK9} ➞ 3 personas
+
+UK2, UK3, UK4, UK5, UK6, UK6, UK7, UK8, UK9       ➞ reseller</code></pre>
+
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 

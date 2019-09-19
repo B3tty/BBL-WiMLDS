@@ -13263,7 +13263,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p>Neural Collaborative Filtering approach</p>
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p><strong><em>Neural Collaborative Filtering approach</em></strong></p>
 <p>Collaborative filtering uses customer-product interactions and is based on the assumption that customers buying similar products have similar tastes. This principle naturally translates into the size and fit domain as "customers with similar body shapes tend to buy clothes in similar sizes".</p>
 <ul>
 <li>learn a latent space at a product size level instead of at a product level i.e. we have a different vector for every possible size of a product</li>
@@ -13277,12 +13277,12 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p>Transfer from Brand to Product</p>
+<h2 id="Size-recommendations">Size recommendations<a class="anchor-link" href="#Size-recommendations">&#182;</a></h2><h3 id="Asos-Approach">Asos Approach<a class="anchor-link" href="#Asos-Approach">&#182;</a></h3><p><strong><em>Transfer from Brand to Product</em></strong></p>
 <p>Model of product-size combinations instead of just products =&gt; product-size interaction matrix ~10 times sparser than for product recommendations</p>
 <ul>
 <li>Assume that each brand has consistent sizes</li>
-<li>Learn latent representations <em>V<sub>b<sub>s</sub>&lt;/sub&gt;</em> for every combination of brand <em>b</em> and size <em>s</em></li>
-<li>Transfer this to a product level: V<sub>p<sub>s</sub>&lt;/sub&gt; = V<sub>b<sub>s</sub>&lt;/sub&gt;, ∀p<sub>s</sub> ∈ b<sub>s</sub></li>
+<li>Learn latent representations <em>V<sub>bs</sub></em> for every combination of brand <em>b</em> and size <em>s</em></li>
+<li>Transfer this to a product level: V<sub>ps</sub> = V<sub>bs</sub>  , ∀p<sub>s</sub> ∈ b<sub>s</sub></li>
 </ul>
 <p>Impacts</p>
 <ul>
@@ -13297,8 +13297,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="State-of-the-Art">State of the Art<a class="anchor-link" href="#State-of-the-Art">&#182;</a></h3><p>Goal: Reduce noise in recommendations</p>
-<ul>
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><p><em>Goal: Reduce noise in recommendations</em></p>
+<h3 id="State-of-the-Art">State of the Art<a class="anchor-link" href="#State-of-the-Art">&#182;</a></h3><ul>
 <li>Explicitly use different user profiles (Netflix)</li>
 <li>Use of empirically determined thresholds on the range of purchased sizes</li>
 <li>Statistical models</li>
@@ -13322,11 +13322,42 @@ a.anchor-link {
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3><p><strong><em>Process</em></strong></p>
+<ul>
+<li><p>Run the GMM to detect λ personas within H<sub>u</sub></p>
+<ul>
+<li>The parameter λ (number of personas) is iteratively increased as long as<ul>
+<li>s<sub>λ</sub> is higher than s<sub>λ-1</sub></li>
+<li>The core size of each mixture component differs by at least 1 size unit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Calculating the silhouette score s<sub>λ</sub> associated with that mixture</p>
+</li>
+</ul>
+<p>When the iterative process is finished, if <strong>λ &gt; 1</strong> that customer is identified as buying for <strong>multiple personas</strong>.</p>
+<p>Accounts with multiple personas are removed from training and testing sets for size recommendations.</p>
+
 </div>
+</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Multiple-Personas-detection">Multiple Personas detection<a class="anchor-link" href="#Multiple-Personas-detection">&#182;</a></h2><h3 id="Asos-approach">Asos approach<a class="anchor-link" href="#Asos-approach">&#182;</a></h3>
+<pre><code>UK3, UK3, UK3.5, UK4, UK4                         ➞ 1 persona
+
+{UK2, UK2}, {UK5, UK5, UK6}                       ➞ 2 personas
+
+{UK2, UK3, UK3, UK3, UK4, UK4}, {UK6, UK6}, {UK9} ➞ 3 personas
+
+UK2, UK3, UK4, UK5, UK6, UK6, UK7, UK8, UK9       ➞ reseller</code></pre>
+
 </div>
 </div>
 </div></section></section>

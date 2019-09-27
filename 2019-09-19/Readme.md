@@ -5,3 +5,5 @@ WiMLDS Paris is launching a new format: paper reading sessions. These sessions w
 The first iteration of these BBL takes place on the 19th of September 2019. 
 
 The topic of this BBl is this paper: [Learning Embeddings for Product Size Recommendations](https://bit.ly/2Z88rff)
+
+The slides used for the session are [here](https://b3tty.github.io/BBL-WiMLDS/2019-09-19/slides)

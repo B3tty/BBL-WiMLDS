@@ -11,4 +11,5 @@ For each one of these BBLs, you will find
 
 ## Sessions
 
-* [BBL #1](2019-09-19/Readme.md): Learning Embeddings for Product Size Recommendations
+* [BBL #1](2019-09-19/Readme.md) (2019/09/19): Learning Embeddings for Product Size Recommendations
+* [BBL #2](2019-10-17/Readme.md) (2019/10/17): Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification

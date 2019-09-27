@@ -1,6 +1,0 @@
-[submodule "reveal.js"]
-	path = reveal.js
-	url = https://github.com/hakimel/reveal.js.git
-[submodule "2019-09-19"]
-	path = 2019-09-19
-	url = https://github.com/B3tty/BBL-1.git

@@ -13288,7 +13288,14 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><p>=&gt; Investigate if the association between ads and ad feedback is affected by</p>
+<h2 id="1.-Analysis">1. Analysis<a class="anchor-link" href="#1.-Analysis">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><p>⇨ Investigate if the association between ads and ad feedback is affected by</p>
 <ul>
 <li>ads being targeted to users with particular demographics, interests, behaviours</li>
 <li>user behaviour (eg clicks, interaction with content)</li>
@@ -13302,11 +13309,90 @@ a.anchor-link {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Data">Data<a class="anchor-link" href="#Data">&#182;</a></h3><p>40 million distinct users and 200 000 distinct ads</p>
-<h3 id="Metric">Metric<a class="anchor-link" href="#Metric">&#182;</a></h3><p>Hide Rate = hides / impressions</p>
-<ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Metric">Metric<a class="anchor-link" href="#Metric">&#182;</a></h3>$$ Hide Rate = \frac{hides}{impressions} $$<ul>
 <li>feedback is generally a signal of bad quality: explicit negative signal</li>
-<li>the absence of click does not necessarily indicate a low quality ad</li>
-<li>high CTR may not mean high quality</li>
+<li>CTR: the absence of click does not necessarily indicate a low quality ad, high CTR may not mean high quality</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Features---to-characterize-users">Features - to characterize users<a class="anchor-link" href="#Features---to-characterize-users">&#182;</a></h3><ul>
+<li>User demographics: age, gender, interests, location</li>
+<li>User behaviour: ad impressions, ad clicks, article clicks</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Features---to-characterize-ads">Features - to characterize ads<a class="anchor-link" href="#Features---to-characterize-ads">&#182;</a></h3><ul>
+<li>Text-based: spam, readability, adult</li>
+<li>Image-based: contains text, contains flesh</li>
+<li>Advertiser: pagerank score of the ad landing page</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><ul>
+<li>Study the difference of ad hide behaviour for each user variable in turn</li>
+</ul>
+$$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h3><ul>
+<li><p>User demographics</p>
+<ul>
+<li>users from different states have different behaviours</li>
+<li>demographic distribitions differ per state</li>
+<li>female users are less likely to hide than male users</li>
+</ul>
+</li>
+<li><p>User interests</p>
+<ul>
+<li>"Retail" and "Technology" most likely to hide</li>
+<li>"Business/B2B" and "Telecommunication" less likely to hide</li>
+<li><strong>feedback variations accross these variables make them good candidates to indentify bias due to targeting</strong></li>
+</ul>
+</li>
+<li><p>Ad quality</p>
+<ul>
+<li>more likely to be spam: more likely to be hidden</li>
+<li>easier to read: more likely to be hidden</li>
+<li>most and least "adultness": less likely to be hidden</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Conclusion">Conclusion<a class="anchor-link" href="#Conclusion">&#182;</a></h3><ul>
+<li>Some types of users that provide feedback may be more sensitve to ads and have a higher tendency to provide feedback</li>
+<li>Since ads are targeted, the ad feedback may be from a group unrepresentative of the general population</li>
 </ul>
 
 </div>
@@ -13315,18 +13401,70 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Where-is-the-bias?">Where is the bias?<a class="anchor-link" href="#Where-is-the-bias?">&#182;</a></h2>
+<h2 id="2.-Bias">2. Bias<a class="anchor-link" href="#2.-Bias">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-that-corrects-bias">Model that corrects bias<a class="anchor-link" href="#Model-that-corrects-bias">&#182;</a></h2><p>Model that corrects for the bias in ad feedback data to produce ad quality scores</p>
+<h2 id="Modelling-Bias">Modelling Bias<a class="anchor-link" href="#Modelling-Bias">&#182;</a></h2><p>An ad quality model based on such biased data wil consistently over or under estimate the quality of ads.</p>
+<p>⇨ develop a model able to determine the proportion of bias present in the feedback on ads.</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Descriptive model</li>
+<li>Only include variables able to explain the source of selection bias</li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Modelling-Bias">Modelling Bias<a class="anchor-link" href="#Modelling-Bias">&#182;</a></h2><p>Simple logistic regression based ad-user model</p>
+<ul>
+<li>one ad feature <em>a</em></li>
+<li>one user selection feature <em>u</em></li>
+<li>associated weights</li>
+</ul>
+$$ f(\hat{p}) = w_0 + w_a . a + w_u . u + \epsilon  $$<ul>
+<li>only with one ad feature <em>a</em></li>
+</ul>
+$$ f(\hat{p}) = \hat{w}_0 + \hat{w}_a . a + \epsilon  $$<ul>
+<li>If both models are fit to the feedback data with the selection bias then the bias in the coefficient of the ad model is</li>
+</ul>
+$$ \hat{w}_a = w_a + \rho w_u $$<ul>
+<li>$\rho$ is the correlation between <em>a</em> and <em>u</em></li>
+<li>The bias in the ad only model is the true user bias proportional to the correlation between the user and the ad feature</li>
+</ul>
+<p>⇨ Goal is to identify user selection bias term $ w_u . u $</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Modelling-Bias">Modelling Bias<a class="anchor-link" href="#Modelling-Bias">&#182;</a></h2>
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Model-that-corrects-bias">Model that corrects bias<a class="anchor-link" href="#Model-that-corrects-bias">&#182;</a></h2><p>use this model to develop an ad quality model based on ad feedback data corrected for bias.</p>
+<p>Model that corrects for the bias in ad feedback data to produce ad quality scores</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">

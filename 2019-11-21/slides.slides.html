@@ -13281,7 +13281,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1.-Analysis">1. Analysis<a class="anchor-link" href="#1.-Analysis">&#182;</a></h2><h2 id="2.-Bias:-explanation-and-correction">2. Bias: explanation and correction<a class="anchor-link" href="#2.-Bias:-explanation-and-correction">&#182;</a></h2><h2 id="3.">3.<a class="anchor-link" href="#3.">&#182;</a></h2>
+<h2 id="1.-Analysis">1. Analysis<a class="anchor-link" href="#1.-Analysis">&#182;</a></h2><h2 id="2.-Bias:-explanation-and-correction">2. Bias: explanation and correction<a class="anchor-link" href="#2.-Bias:-explanation-and-correction">&#182;</a></h2><h2 id="3.-Ad-Ranking">3. Ad Ranking<a class="anchor-link" href="#3.-Ad-Ranking">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13312,33 +13312,33 @@ a.anchor-link {
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Metric">Metric<a class="anchor-link" href="#Metric">&#182;</a></h3>$$ Hide Rate = \frac{hides}{impressions} $$<ul>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Metric">Metric<a class="anchor-link" href="#Metric">&#182;</a></h3>$$ Hide Rate = \frac{hides}{impressions} $$<ul>
 <li>feedback is generally a signal of bad quality: explicit negative signal</li>
 <li>CTR: the absence of click does not necessarily indicate a low quality ad, high CTR may not mean high quality</li>
 </ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Features---to-characterize-users">Features - to characterize users<a class="anchor-link" href="#Features---to-characterize-users">&#182;</a></h3><ul>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Features---to-characterize-users">Features - to characterize users<a class="anchor-link" href="#Features---to-characterize-users">&#182;</a></h3><ul>
 <li>User demographics: age, gender, interests, location</li>
 <li>User behaviour: ad impressions, ad clicks, article clicks</li>
 </ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Features---to-characterize-ads">Features - to characterize ads<a class="anchor-link" href="#Features---to-characterize-ads">&#182;</a></h3><ul>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Features---to-characterize-ads">Features - to characterize ads<a class="anchor-link" href="#Features---to-characterize-ads">&#182;</a></h3><ul>
 <li>Text-based: spam, readability, adult</li>
 <li>Image-based: contains text, contains flesh</li>
 <li>Advertiser: pagerank score of the ad landing page</li>
@@ -13346,21 +13346,21 @@ a.anchor-link {
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><ul>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Formula">Formula<a class="anchor-link" href="#Formula">&#182;</a></h3><ul>
 <li>Study the difference of ad hide behaviour for each user variable in turn</li>
 </ul>
 $$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h3><ul>
+<h2 id="Analysis">Analysis<a class="anchor-link" href="#Analysis">&#182;</a></h2><h3 id="Results">Results<a class="anchor-link" href="#Results">&#182;</a></h3><ul>
 <li><p>User demographics</p>
 <ul>
 <li>users from different states have different behaviours</li>
@@ -13386,7 +13386,7 @@ $$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13401,7 +13401,7 @@ $$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.-Bias">2. Bias<a class="anchor-link" href="#2.-Bias">&#182;</a></h2>
+<h2 id="2.-Modelling-and-Correcting-Bias">2. Modelling and Correcting Bias<a class="anchor-link" href="#2.-Modelling-and-Correcting-Bias">&#182;</a></h2>
 </div>
 </div>
 </div></section></section><section><section>
@@ -13410,13 +13410,6 @@ $$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Modelling-Bias">Modelling Bias<a class="anchor-link" href="#Modelling-Bias">&#182;</a></h2><p>An ad quality model based on such biased data wil consistently over or under estimate the quality of ads.</p>
 <p>⇨ develop a model able to determine the proportion of bias present in the feedback on ads.</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Descriptive model</li>
 <li>Only include variables able to explain the source of selection bias</li>
@@ -13424,7 +13417,7 @@ $$ HR_{var}(u) = \frac{HR(u) - mean(HR(U))}{mean(Hr(U))}$$
 
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13448,7 +13441,7 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 
 </div>
 </div>
-</div><div class="fragment">
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13463,7 +13456,7 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13477,12 +13470,27 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 
 </div>
 </div>
-</div></div><div class="fragment">
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-that-corrects-bias">Model that corrects bias<a class="anchor-link" href="#Model-that-corrects-bias">&#182;</a></h2><p>Use this model to develop an ad quality model based on ad feedback data corrected for bias.</p>
-<p>Model that corrects for the bias in ad feedback data to produce ad quality scores</p>
+<h2 id="Modelling-Bias">Modelling Bias<a class="anchor-link" href="#Modelling-Bias">&#182;</a></h2><ul>
+<li><em>net effect</em> $\beta$: how individual variable level affects the selection bias present in bias</li>
+<li><em>p</em> : probability of hiding ads</li>
+</ul>
+$$ \frac{p}{1-p} = e^\beta $$$$ p = \frac{e^\beta}{1 + e^\beta} $$
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="table4.png" alt="table 4"></p>
+<ul>
+<li>variables included in the model</li>
+<li>levels of each variable</li>
+<li>effects of each level ($\beta$)</li>
+</ul>
 
 </div>
 </div>
@@ -13490,7 +13498,13 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="-"> <a class="anchor-link" href="#-">&#182;</a></h2><p>Technique that provides explicit control over the revenue impact when incorporating ad quality scores in the ad ranking mechanism</p>
+<h2 id="Correcting-Bias">Correcting Bias<a class="anchor-link" href="#Correcting-Bias">&#182;</a></h2><h3 id="Formula">Formula<a class="anchor-link" href="#Formula">&#182;</a></h3><p>Formula that explicitly models the user selection bias in addition to the ad features:</p>
+$$ f(\hat{p}) = w_0 + w_a . a + I(w_u . u) + \epsilon $$<ul>
+<li><em>I</em> binarizes the user selection bias term using a threshold (0.5)</li>
+</ul>
+<h3 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h3><p>⇨ ads with low pagerank, low readability, low adult and low spam levels are considered as low quality</p>
+<p>⇨ single features do not characterize the quality of an ad</p>
+<p>⇨ features such as adultness and pagerank: for high levels, likely to receive feedback from general population, but less likely from a specific segment of users.</p>
 
 </div>
 </div>
@@ -13498,7 +13512,22 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Model-comparison">Model comparison<a class="anchor-link" href="#Model-comparison">&#182;</a></h2><p>compare two models, that provide biased and bias corrected feedback estimates, to investigate the value of correcting for bias in ad feedback data.</p>
+<h2 id="3.-Ad-Ranking">3. Ad Ranking<a class="anchor-link" href="#3.-Ad-Ranking">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ad-Auctions">Ad Auctions<a class="anchor-link" href="#Ad-Auctions">&#182;</a></h2><ul>
+<li>ads are ranked according to a function of their bids</li>
+<li>generally ranked by expected cost per impression <code>eCPI</code>: based on probability that ad is clicked given a user impression</li>
+<li>some companies started to incorporate <strong>quality score</strong></li>
+</ul>
+$$ eCPI = bid_a . P(C_a = 1 | U = u) $$$$ eCPI_q = bid_a . P(C_a = 1 | U = u) . P(Q_a = 1 | U = u) $$<ul>
+<li>$ P(C_a = 1 | U = u) $: probability that the ad is clicked given a user impression</li>
+<li>$ P(Q_a = 1 | U = u) $: probability that the ad will provide a good quality experience, $= 1 - p$ (hide probability) </li>
+</ul>
 
 </div>
 </div>
@@ -13506,6 +13535,20 @@ $$ \hat{w}_a = w_a + \rho w_u $$<ul>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-ad-feedback-in-ad-ranking:-model-comparison">Using ad feedback in ad ranking: model comparison<a class="anchor-link" href="#Using-ad-feedback-in-ad-ranking:-model-comparison">&#182;</a></h2><ul>
+<li>(i)   <em>oracle</em>: empirical, use available logs</li>
+<li>(ii)  <em>biased</em>: use estimates from the biased model</li>
+<li>(iii) <em>unbiased</em>: use estimates from corrected model</li>
+</ul>
+<p><img src="figure5.png" alt="fig 5"></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Ad-feedback-filtering-on-revenue">Ad feedback filtering on revenue<a class="anchor-link" href="#Ad-feedback-filtering-on-revenue">&#182;</a></h2><p><img src="figure6.png" alt="Fig 6"></p>
 
 </div>
 </div>

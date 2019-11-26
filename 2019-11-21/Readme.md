@@ -4,6 +4,10 @@ WiMLDS Paris has another event format: paper reading sessions. These sessions ha
 
 The third iteration of these BBL takes place on the 21st of November 2019. 
 
-The topic of this BBl is this paper: [Uncovering Bias in Ad Feedback Data Analyses & Applications](https://labtomarket.files.wordpress.com/2019/03/adfeedback.pdf).
+The topic of this BBl is this paper: [Uncovering Bias in Ad Feedback Data Analyses & Applications](Resources/adfeedback.pdf).
 
 Slides can be found here: [slides](slides).
+
+
+
+Another member also presented [this paper](Resources/deepunfolding.pdf).

@@ -11,6 +11,6 @@ For each one of these BBLs, you will find
 
 ## Sessions
 
-* [BBL #1](2019-09-19/Readme.md) (2019/09/19): [Learning Embeddings for Product Size Recommendations](https://bit.ly/2Z88rff)
-* [BBL #2](2019-10-17/Readme.md) (2019/10/17): [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](https://bit.ly/2lFtFTR)
-* [BBL #3](2019-11-21/Readme.md) (2019-11-21): [Uncovering Bias in Ad Feedback Data Analyses & Applications](https://labtomarket.files.wordpress.com/2019/03/adfeedback.pdf)
+* [BBL #1](2019-09-19) (2019/09/19): [Learning Embeddings for Product Size Recommendations](2019-09-19/Resources/asos%20-%20size%20reco.pdf)
+* [BBL #2](2019-10-17) (2019/10/17): [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](2019-10-17/Resources/gender_shades.pdf)
+* [BBL #3](2019-11-21) (2019-11-21): [Uncovering Bias in Ad Feedback Data Analyses & Applications](2019-11-21/Resources/adfeedback.pdf)

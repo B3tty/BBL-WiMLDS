@@ -4,6 +4,6 @@ WiMLDS Paris is launching a new format: paper reading sessions. These sessions h
 
 The second iteration of these BBL takes place on the 17th of October 2019. 
 
-The topic of this BBl is this paper: [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](https://bit.ly/2lFtFTR).
+The topic of this BBl is this paper: [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](Resources/gender_shades.pdf).
 
-The slides used for the session are [here](https://b3tty.github.io/BBL-WiMLDS/2019-10-17/slides).
+The slides used for the session are [here](slides).

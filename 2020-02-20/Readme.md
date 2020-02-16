@@ -8,7 +8,3 @@ The topic of this BBl is this paper: [Inverting The Generator Of A Generative
 Adversarial Network (Antonia Creswell and Anil A Bharath)](Resources/reverting_gans.pdf).
 
 Slides can be found here: [slides](slides).
-
-
-
-Another member also presented [this paper](Resources/deepunfolding.pdf).

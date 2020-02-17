@@ -1,3 +1,6 @@
 [submodule "2020-02-20/InvertingGAN"]
 	path = 2020-02-20/InvertingGAN
 	url = https://github.com/ToniCreswell/InvertingGAN.git
+[submodule "2020-02-20/attribute-cVAEGAN"]
+	path = 2020-02-20/attribute-cVAEGAN
+	url = https://github.com/ToniCreswell/attribute-cVAEGAN.git

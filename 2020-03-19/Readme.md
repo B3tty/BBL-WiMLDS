@@ -6,5 +6,6 @@ The fifth iteration of these BBL took place on the 19th of March 2020.
 
 Two papers were presented during this session:
 
-* [Marie Sacksick](https://www.linkedin.com/in/marie-sacksick) introduced [An Active Learning Approach for Reducing Annotation Cost in Skin Lesion Analysis](Resources/active_learning.pdf)
-* [CraftAssist Instruction Parsing: Semantic Parsing for a Minecraft Assistant](Resources/craftassist.pdf)
+* [Marie Sacksick](https://www.linkedin.com/in/marie-sacksick) introduced [An Active Learning Approach for Reducing Annotation Cost in Skin Lesion Analysis (X Shi, Q Dou, et al.)](Resources/active_learning.pdf)
+
+* [CraftAssist Instruction Parsing: Semantic Parsing for a Minecraft Assistant (Y Jernite, K Srinet, et al.)](Resources/craftassist.pdf)

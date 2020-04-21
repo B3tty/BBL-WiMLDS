@@ -28,8 +28,8 @@ For each one of these BBLs, you will find
   - [Inverting The Generator Of A Generative Adversarial Network (Antonia Creswell and Anil A Bharath)](2020-02-20/Resources/reverting_gans.pdf)
 
 * [BBL #5](2020-03-19) (2020-03-19):
-  - [An Active Learning Approach for Reducing Annotation Cost in Skin Lesion Analysis](2020-03-19/Resources/active_learning.pdf) (introduced by Marie Sacksick)
-  - [CraftAssist Instruction Parsing: Semantic Parsing for a Minecraft Assistant](2020-03-19/Resources/craftassist.pdf)
+  - [An Active Learning Approach for Reducing Annotation Cost in Skin Lesion Analysis (X Shi, Q Dou, et al.)](2020-03-19/Resources/active_learning.pdf) (introduced by Marie Sacksick)
+  - [CraftAssist Instruction Parsing: Semantic Parsing for a Minecraft Assistant (Y Jernite, K Srinet, et al.)](2020-03-19/Resources/craftassist.pdf)
 
 * [BBL #6](2020-04-16) (2020-04-16):
   - [Attention Is All You Need](2020-04-16/Resources/attention_is_all_you_need.pdf) (introduced by Maroua Maachou)

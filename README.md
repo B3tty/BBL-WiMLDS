@@ -32,8 +32,8 @@ For each one of these BBLs, you will find
   - [CraftAssist Instruction Parsing: Semantic Parsing for a Minecraft Assistant (Y Jernite, K Srinet, et al.)](2020-03-19/Resources/craftassist.pdf)
 
 * [BBL #6](2020-04-16) (2020-04-16):
-  - [Attention Is All You Need](2020-04-16/Resources/attention_is_all_you_need.pdf) (introduced by Maroua Maachou)
-  - [Graph Convolution for Multimodal Information Extraction from Visually Rich Documents](2020-04-16/Resources/visually_rich_documents.pdf) (introduced by Chloé Laurent)
+  - [Attention Is All You Need (A Vaswani, N Parmar, et al.)](2020-04-16/Resources/attention_is_all_you_need.pdf) (introduced by Maroua Maachou)
+  - [Graph Convolution for Multimodal Information Extraction from Visually Rich Documents (X Liu, F Gao, et al.)](2020-04-16/Resources/visually_rich_documents.pdf) (introduced by Chloé Laurent)
 
 * [BBL #7](2020-05-26) (2020-05-26):
   - [Juliette](2020-05-26/Resources/) (introduced by Juliette Tisseyre)

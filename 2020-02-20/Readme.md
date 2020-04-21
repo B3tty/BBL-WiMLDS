@@ -1,8 +1,8 @@
 # BBL #4
 
-WiMLDS Paris has another event format: paper reading sessions. These sessions happen at lunchtime, each 3rd Thursday of the month. The goal of these events is to take some time to discuss Machine Learning and Data Science papers that we found interesting, and take the opportunity to discover ML-passionate people in Paris.
+These sessions are an initiative by the [WiMLDS Paris meetup group](https://www.meetup.com/Paris-Women-in-Machine-Learning-Data-Science). Each 3rd Thursday of the month, during lunchtime, we take the time to discuss Machine Learning and Data Science papers that we have found interesting. It's also a good opportunity to meet ML-passionate people in Paris.
 
-The fourth iteration of these BBL takes place on the 20th of February 2020. 
+The fourth iteration of these BBL took place on the 20th of February 2020. 
 
 The topic of this BBl is this paper: [Inverting The Generator Of A Generative
 Adversarial Network (Antonia Creswell and Anil A Bharath)](Resources/reverting_gans.pdf).

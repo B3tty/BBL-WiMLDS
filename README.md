@@ -11,9 +11,12 @@ For each one of these BBLs, you will find
 
 ## Sessions
 
-* [BBL #1](2019-09-19) (2019/09/19): [Learning Embeddings for Product Size Recommendations](2019-09-19/Resources/asos%20-%20size%20reco.pdf)
-* [BBL #2](2019-10-17) (2019/10/17): [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](2019-10-17/Resources/gender_shades.pdf)
-* [BBL #3](2019-11-21) (2019-11-21): [Uncovering Bias in Ad Feedback Data Analyses & Applications](2019-11-21/Resources/adfeedback.pdf)
+* [BBL #1](2019-09-19) (2019/09/19):
+  - [Learning Embeddings for Product Size Recommendations](2019-09-19/Resources/asos%20-%20size%20reco.pdf)
+* [BBL #2](2019-10-17) (2019/10/17):
+  - [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](2019-10-17/Resources/gender_shades.pdf)
+* [BBL #3](2019-11-21) (2019-11-21):
+  - [Uncovering Bias in Ad Feedback Data Analyses & Applications](2019-11-21/Resources/adfeedback.pdf)
 * [BBL #4](2020-02-20) (2020-02-20):
   - [Inverting The Generator Of A Generative Adversarial Network (Antonia Creswell and Anil A Bharath)](2020-02-20/Resources/reverting_gans.pdf)
 * [BBL #5](2020-03-19) (2020-03-19):

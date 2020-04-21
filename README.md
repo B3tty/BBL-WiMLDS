@@ -2,7 +2,7 @@
 
 These sessions are an initiative by the [WiMLDS Paris meetup group](https://www.meetup.com/Paris-Women-in-Machine-Learning-Data-Science). Each 3rd Thursday of the month, during lunchtime, we take the time to discuss Machine Learning and Data Science papers that we have found interesting. It's also a good opportunity to meet ML-passionate people in Paris.
 
-I've been in charge of organizing them since September 2019 and I had the chance to organize 6 paper reading sessions so far.
+I've been in charge of organizing them since September 2019 and I had the chance to organize 6 paper reading sessions so far, as well as introducing a good number of papers to our members.
 
 You can find below the list of papers that were discussed during the different sessions.
 

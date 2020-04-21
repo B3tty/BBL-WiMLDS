@@ -37,4 +37,4 @@ For each one of these BBLs, you will find
 
 * [BBL #7](2020-05-26) (2020-05-26):
   - [Juliette](2020-05-26/Resources/) (introduced by Juliette Tisseyre)
-  - [The Influence of Personal Values on Music Taste: Towards Value-Based Music Recommendations](2020-05-26/Resources/music_reco.pdf)
+  - [The Influence of Personal Values on Music Taste: Towards Value-Based Music Recommendations (S Manolios, A Hanjalic, C Liem)](2020-05-26/Resources/music_reco.pdf)

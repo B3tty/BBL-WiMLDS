@@ -11,6 +11,6 @@ Two papers were presented during this session:
   Slides can be found [here]().
 
 
-* I presented [The Influence of Personal Values on Music Taste: Towards Value-Based Music Recommendations](Resources/music_reco.pdf).
+* I presented [The Influence of Personal Values on Music Taste: Towards Value-Based Music Recommendations (S Manolios, A Hanjalic, C Liem)](Resources/music_reco.pdf).
 
   Slides can be found [here](slides).

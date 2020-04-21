@@ -4,8 +4,8 @@ These sessions are an initiative by the [WiMLDS Paris meetup group](https://www.
 
 The third iteration of these BBL took place on the 21st of November 2019. 
 
-The topic of this BBl is this paper: [Uncovering Bias in Ad Feedback Data Analyses & Applications](Resources/adfeedback.pdf).
+The topic of this BBl is this paper: [Uncovering Bias in Ad Feedback Data Analyses & Applications (M Bron, M Lalmas, et al.)](Resources/adfeedback.pdf).
 
 Slides can be found here: [slides](slides).
 
-[Cecile Della Valle](https://www.linkedin.com/in/c%C3%A9cile-della-valle-7109b212b/) also introduced the paper [Deep Unfolding of a Proximal Interior Point Method for Image Restoration](Resources/deepunfolding.pdf).
+[Cecile Della Valle](https://www.linkedin.com/in/c%C3%A9cile-della-valle-7109b212b/) also introduced the paper [Deep Unfolding of a Proximal Interior Point Method for Image Restoration (C. Bertocchi1, E. Chouzenoux, et al.)](Resources/deepunfolding.pdf).

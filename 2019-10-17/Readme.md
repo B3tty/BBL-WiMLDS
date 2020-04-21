@@ -4,6 +4,6 @@ These sessions are an initiative by the [WiMLDS Paris meetup group](https://www.
 
 The second edition of these BBL took place on the 17th of October 2019. 
 
-The topic of this BBl is this paper: [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](Resources/gender_shades.pdf).
+The topic of this BBl is this paper: [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification (J Buolamwini, T Gebru)](Resources/gender_shades.pdf).
 
 The slides used for the session are [here](slides).

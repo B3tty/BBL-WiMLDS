@@ -17,7 +17,7 @@ For each one of these BBLs, you will find
 * [BBL #1](2019-09-19) (2019-09-19):
   - [Learning Embeddings for Product Size Recommendations (K Dogani, M Tomassetti et al.)](2019-09-19/Resources/asos%20-%20size%20reco.pdf)
 * [BBL #2](2019-10-17) (2019-10-17):
-  - [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification](2019-10-17/Resources/gender_shades.pdf)
+  - [Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification (J Buolamwini, T Gebru)](2019-10-17/Resources/gender_shades.pdf)
 * [BBL #3](2019-11-21) (2019-11-21):
   - [Uncovering Bias in Ad Feedback Data Analyses & Applications](2019-11-21/Resources/adfeedback.pdf)
   - [Deep Unfolding of a Proximal Interior Point Method for Image Restoration](2019-11-21/Resources/deepunfolding.pdf) (introduced by Cécile Della Valle)

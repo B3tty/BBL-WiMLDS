@@ -1,5 +1,5 @@
-theme: jekyll-theme-tactile
-#remote_theme: daviddarnes/alembic
+#theme: jekyll-theme-tactile
+remote_theme: daviddarnes/alembic
 
 title: BBL WiMLDS
 

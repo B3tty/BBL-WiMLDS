@@ -6,11 +6,11 @@ The seventh edition of these paper sessions took place on the 26th of May 2020.
  
 Two papers were presented during this session:
 
-* [Juliette Tisseyre](https://www.linkedin.com/in/juliettetisseyre) presented []().
+* [Juliette Tisseyre](https://www.linkedin.com/in/juliettetisseyre) presented [SynSin: End-to-end View Synthesis from a Single Image (Olivia Wiles, Georgia Gkioxari et al)](Resources/synsin.pdf).
 
   Slides can be found [here]().
 
 
-* I presented [The Influence of Personal Values on Music Taste: Towards Value-Based Music Recommendations (S Manolios, A Hanjalic, C Liem)](Resources/music_reco.pdf).
+* I presented [How can they know that? A study of factors affecting the creepiness of recommendations (Helma Torkamaan, Catalin-Mihai Barbu, Jürgen Ziegler)](Resources/creepiness.pdf).
 
   Slides can be found [here](slides).

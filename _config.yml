@@ -1,4 +1,17 @@
 # theme: jekyll-theme-tactile
 remote_theme: daviddarnes/alembic
+title: BBL WiMLDS
 
-exclude: ["Taaable", "2020-02-20/InvertingGAN"]
+exclude:
+  - "Taaable"
+  - "2020-02-20/InvertingGAN"
+
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji

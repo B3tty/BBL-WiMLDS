@@ -37,9 +37,9 @@ For each one of these BBLs, you will find
 
 * [BBL #7](2020-05-26) (2020-05-26):
   - [How can they know that? A study of factors affecting the creepiness of recommendations (Helma Torkamaan, Catalin-Mihai Barbu, Jürgen Ziegler)](2020-05-26/Resources/creepiness.pdf)
-  - [SynSin: End-to-end View Synthesis from a Single Image (Olivia Wiles, Georgia Gkioxari et al)](2020-05-26/Resources/synsin.pdf), introduced by Juliette Tisseyre
+  - [SynSin: End-to-end View Synthesis from a Single Image (Olivia Wiles, Georgia Gkioxari et al)](2020-05-26/Resources/synsin.pdf) (introduced by Juliette Tisseyre)
 
 * [BBL #8](2020-06-18) (2020-06-18):
   - [Fake News Detection Using a Blend of Neural Networks: An Application of Deep Learning (Aman Agarwal, Mamta Mittal, et al)](https://link.springer.com/article/10.1007/s42979-020-00165-4)
-  - [Towards Robust Deep Neural Networks for Affect and Depression Recognition (Emna Rejaibi, Daoud Kadoch, et al)](https://arxiv.org/abs/1911.00310), introduced by Farah Dhouib
+  - [Towards Robust Deep Neural Networks for Affect and Depression Recognition (Emna Rejaibi, Daoud Kadoch, et al)](https://arxiv.org/abs/1911.00310) (introduced by Farah Dhouib)
 

@@ -37,7 +37,6 @@ For each one of these BBLs, you will find
 
 * [BBL #7](2020-05-26) (2020-05-26):
   - [How can they know that? A study of factors affecting the creepiness of recommendations (Helma Torkamaan, Catalin-Mihai Barbu, Jürgen Ziegler)](2020-05-26/Resources/creepiness.pdf)
-
   - [SynSin: End-to-end View Synthesis from a Single Image (Olivia Wiles, Georgia Gkioxari et al)](2020-05-26/Resources/synsin.pdf), introduced by Juliette Tisseyre
 
 * [BBL #8](2020-06-18) (2020-06-18):

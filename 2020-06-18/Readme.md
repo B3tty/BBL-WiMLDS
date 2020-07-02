@@ -2,7 +2,7 @@
 
 These sessions are an initiative by the [WiMLDS Paris meetup group](https://www.meetup.com/Paris-Women-in-Machine-Learning-Data-Science). Each 3rd Thursday of the month, during lunchtime, we take the time to discuss Machine Learning and Data Science papers that we have found interesting. It's also a good opportunity to meet ML-passionate people in Paris.
 
-The seventh edition of these paper sessions took place on the 26th of May 2020.
+The eight edition of these paper sessions took place on the 18th of June 2020.
  
 Two papers were presented during this session:
 
